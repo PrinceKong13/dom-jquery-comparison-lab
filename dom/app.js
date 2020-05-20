@@ -1,9 +1,20 @@
-let friends = ["Chuy", "Stephen", "Quinton", "Ashton", "Joe", "Alex", "Harrison", "Gracie", "Anna", "Charles"]
+let friends = [
+  "Chuy",
+  "Stephen",
+  "Quinton",
+  "Ashton",
+  "Joe",
+  "Alex",
+  "Harrison",
+  "Gracie",
+  "Anna",
+  "Charles",
+];
 let currentFriend = 0;
 
 let niceButton = document.createElement("button");
 let niceText = document.createTextNode("Nice.");
-let example1 = document.getElementById("1")
+let example1 = document.getElementById("1");
 example1.appendChild(niceButton);
 niceButton.appendChild(niceText);
 niceButton.addEventListener("click", function () {
@@ -27,7 +38,7 @@ colorChangingDiv.addEventListener("mouseleave", function () {
   colorChangingDiv.style.backgroundColor = "white";
 });
 
-let example4 = document.getElementById("4")
+let example4 = document.getElementById("4");
 let colorChangePara = document.createElement("p");
 let colorChangingParaText = document.createTextNode(
   "this text changes colors when you click it"
@@ -43,7 +54,7 @@ colorChangePara.addEventListener("click", function () {
     "rgb(" + randomColor1 + "," + randomColor2 + "," + randomColor3 + ")";
 });
 
-let example5 = document.getElementById("5")
+let example5 = document.getElementById("5");
 let nameButton = document.createElement("button");
 let nameButtonText = document.createTextNode("What is my name?");
 example5.appendChild(nameButton);
@@ -62,7 +73,7 @@ nameButton.addEventListener("click", function () {
 let friendList = document.getElementById("friendList");
 let friendButton = document.getElementById("addFriend");
 
-friendButton.addEventListener("click", function() {
+friendButton.addEventListener("click", function () {
   let friendItem = document.createElement("li");
   let friendText = document.createTextNode(friends[currentFriend]);
   friendItem.appendChild(friendText);
@@ -70,5 +81,5 @@ friendButton.addEventListener("click", function() {
   currentFriend++;
   if (currentFriend == 10) {
     currentFriend = 0;
-}
-})
+  }
+});

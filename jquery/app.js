@@ -56,6 +56,6 @@ $("#addFriend").click(function () {
   $("#friendList").append("<li>" + friends[currentFriend] + "</li>");
   ++currentFriend;
   if (currentFriend == 10) {
-      currentFriend = 0;
+    currentFriend = 0;
   }
 });
