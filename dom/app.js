@@ -68,4 +68,7 @@ friendButton.addEventListener("click", function() {
   friendItem.appendChild(friendText);
   friendList.appendChild(friendItem);
   currentFriend++;
+  if (currentFriend == 10) {
+    currentFriend = 0;
+}
 })
